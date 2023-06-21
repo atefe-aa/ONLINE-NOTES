@@ -1,0 +1,88 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    background: url("background.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x:hidden;
+}
+
+.gray{
+    color: darkgray;
+}
+.gray:active, .gray:hover{
+    background-color: rgb(84, 11, 153);
+    color: darkgray;
+}
+.pink{
+    background-color: #d196d3;
+    color: #181515f5;
+}
+.pink:hover{
+    background-color: #e38de6;
+    color: #181515f5;
+    width: 95px;
+}
+
+/* footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color:blueviolet;
+    color: rgb(75, 75, 75);
+    width: 100%;
+    /* text-align: center; */
+    padding-top: 10px;
+}
+
+/* jumbotron */
+.jumbotron{
+    height: 500px;
+    margin-top: 120px;
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+.jumbotron p{
+    font-size: 32px;
+}
+
+.yellow{
+    background-color: rgba(251, 184, 0, 0.801);
+    color: rgb(75, 75, 74);
+    border: rgb(151, 150, 150) 0.5px solid;
+}
+.yellow:hover{
+    cursor: pointer;
+    background-color: rgb(251, 184, 0);
+    color: rgb(75, 75, 74);
+    border: rgb(151, 150, 150) 0.5px solid;
+}
+
+/* modal */
+.modal-header, .modal-footer{
+    background-color:rgba(155, 79, 226, 0.651); 
+}
+
+.contentContainer{
+    margin-top: 180px;
+}
+/* notepad */
+.notpadContainer{
+    padding: 10px;
+    color: rgb(108, 31, 185);
+    background-color: #e0cce0;
+}
+.allNotes{
+    border: #e0cce0 solid 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #c5acc5dc;
+}
+.allNotes a{
+    text-decoration:none;
+    color: black;
+}
