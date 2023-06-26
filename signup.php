@@ -129,15 +129,15 @@ if($errors !== ''){
                     //Server settings
                     // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
                     $mail->isSMTP();                                            //Send using SMTP
-                    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+                    $mail->Host       = '';                     //Set the SMTP server to send through
                     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
                     $mail->Username   = '';                     //SMTP username
                     $mail->Password   = '';                               //SMTP password
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-                    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+                    $mail->Port       = ;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
                 
                     //Recipients
-                    $mail->setFrom('yaswizard2@gmail.com', 'Online Notes');
+                    $mail->setFrom('', '');
                     $mail->addAddress($email);     //Add a recipient   //Name is optional
                     //Content
                     $mail->isHTML(true);                                  //Set email format to HTML
@@ -312,15 +312,15 @@ if($errors !== ''){
                     //Server settings
                     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
                     $mail->isSMTP();                                            //Send using SMTP
-                    $mail->Host       = 'mail.myfoliowebsite.iapp.ir';                     //Set the SMTP server to send through
+                    $mail->Host       = '';                     //Set the SMTP server to send through
                     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                    $mail->Username   = '_mainaccount@myfoliowebsite.iapp.ir';                     //SMTP username
-                    $mail->Password   = '368400200402@Aa';                               //SMTP password
+                    $mail->Username   = '';                     //SMTP username
+                    $mail->Password   = '';                               //SMTP password
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-                    $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+                    $mail->Port       = ;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
                 
                     //Recipients
-                    $mail->setFrom('yaswizard2@gmail.com', 'Online Notes');
+                    $mail->setFrom('', 'Online Notes');
                     $mail->addAddress($email);     //Add a recipient   //Name is optional
                     //Content
                     $mail->isHTML(true);                                  //Set email format to HTML
@@ -357,7 +357,7 @@ if($errors !== ''){
 
 
 <?php
-$link = mysqli_connect("localhost", "myfoliow_php_project", "368400200402@Aa", "myfoliow_php_project");
+$link = mysqli_connect("", "", "", "");
 if(!$link){
     die("ERROR: Unable to connect: " . mysqli_connect_error());
 }
